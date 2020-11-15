@@ -1,8 +1,5 @@
 // array 1D, cada entrada tiene una velocidad o son vacíos
 // hay condiciones de frontera abierta y periódica
-
-
-
 /**********************************************************************/
 //                            REGLAS NAGEL
 /**********************************************************************/
@@ -44,7 +41,7 @@ motion evolution1car(motion car, int v_max, int dist_next_veh, double p, double 
   v = slow_down(v,   dist_next_veh);
   v = random_slow(v,   p,  random_n);
 
-  postn = position_actualization(c, postn);
+  postn = position_actualization(v, postn);
 
   return car_actualization(postn, v);
 }

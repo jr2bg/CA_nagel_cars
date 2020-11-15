@@ -71,6 +71,9 @@ int calc_dist_betw_veh_peri(motion car, int L, std::vector<int> carril){
 
 /*******************************************************************
 
-
+Obtiene el valor de la posición real para los carritos en la frontera periodica
 
 ***********************************************************************/
+void real_pos_car_peri(motion &car, int L){
+  if (car.pos >= L) car.pos = car.pos - L;
+}
