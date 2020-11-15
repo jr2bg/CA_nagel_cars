@@ -15,13 +15,13 @@ int add_info(int &L, std::string &boundary, double &p){
 }
 
 int main(){
-  int L = 100;
+  int L = 120;
   double p = 0.2;
   // densidad de los carros
   double rho = 0.3;
   std::string boundary = "open";
 
-  int v_max = 5;
+  int v_max = 3;
   int n_cars = 5;
 
   int n_iterations = 100;
